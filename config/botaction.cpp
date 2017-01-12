@@ -1,7 +1,15 @@
 #include "botaction.h"
 
+namespace botlib { namespace config {
 
-BotConfig::BotAction::BotAction()
+BotAction::BotAction()
 {
 
 }
+
+BotAction::~BotAction()
+{
+
+}
+
+}}

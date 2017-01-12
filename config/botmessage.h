@@ -7,17 +7,23 @@
 #include <QString>
 
 
-namespace BotConfig {
+namespace botlib {
+namespace config {
 class Reaction;
 
 class BotMessage
 {
 private:
+public:
+
     QString text;
     QList<Reaction> reactions;
-public:
+
     BotMessage();
+    BotMessage(QString text, QList<Reaction> reactions);
+    ~BotMessage();
 };
+}
 }
 
 

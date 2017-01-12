@@ -3,15 +3,18 @@
 
 #include <QString>
 
-
-namespace BotConfig {
+namespace botlib {
+namespace config {
 class BotAction
 {
 private:
-    QString action;
+
 public:
+    QString action;
     BotAction();
+    ~BotAction();
 };
+}
 }
 
 

@@ -4,14 +4,16 @@
 #include "answerreaction.h"
 #include <QTime>
 
-namespace BotConfig {
+namespace botlib {
+namespace config {
 class NoAnswerReaction : public AnswerReaction
 {
 private:
-    QTime time;
+
 public:
     NoAnswerReaction();
 };
+}
 }
 
 #endif // NOANSWERREACTION_H

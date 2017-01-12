@@ -1,7 +1,10 @@
 #include "noanswerreaction.h"
 
+namespace botlib { namespace config {
 
-BotConfig::NoAnswerReaction::NoAnswerReaction()
+NoAnswerReaction::NoAnswerReaction()
 {
 
 }
+
+}}

@@ -5,17 +5,19 @@
 
 #include <QString>
 
-
-namespace BotConfig {
-class AnswerReaction : public Reaction
+namespace botlib {
+namespace config {
+class AnswerReaction : public config::Reaction
 {
 protected:
-    QString userMessage;
+
 
 public:
+
     AnswerReaction();
+    AnswerReaction(QString userMessage, BotMessage *botMessage, BotAction *botAction);
 };
 }
-
+}
 
 #endif // BOTCONFIGANSWERREACTION_H

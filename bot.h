@@ -2,28 +2,37 @@
 #define BOT_H
 
 #include "message.h"
+#include "config/answerreaction.h"
+#include "config/botaction.h"
+#include "config/botconfig.h"
+#include "config/botmessage.h"
+#include "config/noanswerreaction.h"
+#include "config/reaction.h"
 
 #include <bot/config/botconfig.h>
 
-namespace BotLib {
-    class Bot;
-}
-
-class BotLib::Bot
+namespace botlib {
+class Bot
 {
 protected:
-    BotConfig::Config config;
+    config::Config* config;
+    //std::auto_ptr<config::BotMessage> currentConfigMessage;
+    config::BotMessage* currentConfigMessage;
     QList<Message> messageHistory;
     Message getAnswer(Message userMessage);
 public:
-    Bot(BotConfig::Config config);
+    Bot(config::Config* config);
     Bot();
 
     QList<Message>& getMessageHistory();
-    Message getLastMessage();
+    Message& getLastMessage();
 
-    Message sendMessage(QString text);
+    Message sendMessageToBot(QString text);
+    bool update();
+private:
+    void sendMessageToUser(QString text);
 };
+}
 
 #endif // BOT_H
 
