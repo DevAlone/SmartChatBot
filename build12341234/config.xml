@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<botmessage>
+	<text>привет</text>
+	<reactions type="answer">
+		<usermessage></usermessage>
+		<botmessage>
+			<text>как дела?</text>
+			<reactions type="answer">
+				<usermessage>хорошо</usermessage>
+				<botmessage>
+					<text>у меня тоже</text>
+					<reactions></reactions>
+				</botmessage>
+			</reactions>
+			<reactions type="answer">
+				<usermessage>плохо</usermessage>
+				<botmessage>
+					<text>чего так?</text>
+					<reactions type="answer">
+						<usermessage></usermessage>
+						<botmessage>
+							<text>на самом деле мне всё равно, я робот, пока</text>
+						</botmessage>
+					</reactions>
+				</botmessage>
+			</reactions>
+			<reactions type="answer">
+				<usermessage></usermessage>
+				<botmessage>
+					<text>я тебя не понимаю, ты можешь просто ответить хорошо или плохо</text>
+				</botmessage>
+			</reactions>
+			<reactions type="no answer">
+				<time>10</time>
+				<botmessage>
+					<text>ты куда ушёл?</text>
+				</botmessage>
+			</reactions>
+		</botmessage>
+	</reactions>
+</botmessage>

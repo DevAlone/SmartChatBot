@@ -97,26 +97,6 @@ Reaction processReaction(const QDomElement &reactionNode)
                         reaction_time);
 }
 
-//void traverseNode(const QDomNode & node)
-//{
-//    QDomNode domNode = node.firstChild();
-//    while(!domNode.isNull()) {
-//        if(domNode.isElement()) {
-//            QDomElement domElement = domNode.toElement();
-//            if(!domElement.isNull()) {
-//                QString tagName = domElement.tagName();
-//                qDebug()<< tagName << ":" << domElement.text() << endl;
-//                if(tagName == "botmessage") {
-//                    //QMessageBox::warning(0, "test", "botmessage");
-
-//                }
-//                else if(tagName == "text") { }
-//            }
-//        }
-//        traverseNode(domNode);
-//        domNode = domNode.nextSibling();
-//    }
-//}
 }
 
 Config *Config::fromXml(QString xmlData)

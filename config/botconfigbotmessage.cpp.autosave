@@ -1,7 +1,0 @@
-#include "botconfigbotmessage.h"
-
-BotConfigBotMessage::BotConfigBotMessage()
-{
-
-}
-
