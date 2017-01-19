@@ -2,7 +2,7 @@
 
 ## Chat bot on Qt. 
 
-Bot classes located in bot/ 
+Bot classes are located in bot/ 
 
 To create Bot you can create an object of Bot class and set config:
 
@@ -28,7 +28,7 @@ if(!bot->setConfigFromXml(xmlData)) {
 
 ```
 
-For communication with bot you have to use "void sendMessageToBot(const QString & text);" method and signals, for example, "messageHistoryChanged(const QList<botlib::Message> &);"
+For communication with bot you have to use "void sendMessageToBot(const QString & text);" method and signals, for example, "void messageHistoryChanged(const QList<botlib::Message> &);"
 
 ```
 connect(bot, SIGNAL(messageHistoryChanged(QList<botlib::Message>)),
