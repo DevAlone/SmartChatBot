@@ -1,5 +1,6 @@
+# SmartBot
 
-Chat bot on qt. 
+## Chat bot on Qt. 
 
 Bot classes located in bot/ 
 To create Bot you can create an object of Bot class and set config:
